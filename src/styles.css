@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-[class*='__container'] {
+[class*='container'] {
   max-inline-size: 1280px; /* max-width */
   margin-inline: auto; /* center */
   padding-inline: 15px; /* safe paddings */
@@ -9,4 +9,12 @@
 
 body {
   padding: 10px 0 10px 0;
+}
+
+img {
+  image-rendering: pixelated;
+}
+
+section {
+  margin-top: 40px;
 }
