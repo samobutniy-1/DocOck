@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { Home } from './features/home/home';
+import { Hero } from './features/home/hero-section/hero-section';
 
 export const routes: Routes = [
   {
     path: '',
     title: 'Home',
-    component: Home,
+    component: Hero,
   },
 ];
