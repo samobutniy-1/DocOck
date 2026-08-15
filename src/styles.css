@@ -1,20 +1,29 @@
 @import 'tailwindcss';
 
+@import 'tailwindcss';
+
+@layer base {
+  html {
+    color: antiquewhite;
+    background-color: #14192b;
+  }
+
+  body {
+    padding: 10px 0 10px 0;
+  }
+
+  img {
+    image-rendering: pixelated;
+  }
+
+  section {
+    margin-top: 40px;
+  }
+}
+
 [class*='container'] {
   max-inline-size: 1280px; /* max-width */
   margin-inline: auto; /* center */
   padding-inline: 15px; /* safe paddings */
   /* 1280 + 15 + 15 = 1310px real width */
-}
-
-body {
-  padding: 10px 0 10px 0;
-}
-
-img {
-  image-rendering: pixelated;
-}
-
-section {
-  margin-top: 40px;
 }
