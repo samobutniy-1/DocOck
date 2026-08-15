@@ -1,15 +1,19 @@
 @import 'tailwindcss';
 
-@import 'tailwindcss';
+@theme {
+  --color-main: #14192b;
+  --color-secondary: #ff8c42;
+  --color-text: antiquewhite;
+
+  --font-main: 'IBM Plex Mono', monospace;
+  --font-pixel: 'Silkscreen', monospace;
+}
 
 @layer base {
   html {
-    color: antiquewhite;
-    background-color: #14192b;
-  }
-
-  body {
-    padding: 10px 0 10px 0;
+    color: var(--color-text);
+    background-color: var(--color-main);
+    font-family: var(--font-pixel);
   }
 
   img {
@@ -17,7 +21,7 @@
   }
 
   section {
-    margin-top: 40px;
+    margin-top: 100px;
   }
 }
 
