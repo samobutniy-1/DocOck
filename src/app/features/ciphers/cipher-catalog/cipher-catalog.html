@@ -1,14 +1,22 @@
 <section>
   <div class="container">
-    <button type="button">Back button</button>
+    <button type="button" class="mb-8">Back button</button>
+    <h2 class="mb-2 text-3xl text-secondary">Cipher Catalog</h2>
+    <p class="mb-8 text-xl">Choose the difficulty below</p>
     <div>
       <div>
-        <h2>Easy</h2>
-        <ul>
+        <h3 class="mb-4">Easy</h3>
+        <ul class="flex flex-wrap gap-4 mb-8">
           @for (cipher of grouped.easy; track cipher.id) {
             <li>
-              <a routerLink="">
-                <span>{{ cipher.name }}</span>
+              <a
+                routerLink="/"
+                class="inline-flex flex-col justify-center items-center gap-1 bg-none hover:bg-bg p-2"
+              >
+                <div>
+                  <img src="/images/icons/folder.png" [alt]="cipher.name + ' cipher folder'" />
+                </div>
+                <span class="text-xs">{{ cipher.name }}</span>
               </a>
             </li>
           } @empty {
@@ -17,12 +25,18 @@
         </ul>
       </div>
       <div>
-        <h2>Medium</h2>
-        <ul>
+        <h3 class="mb-4">Medium</h3>
+        <ul class="flex flex-wrap gap-4 mb-8">
           @for (cipher of grouped.medium; track cipher.id) {
             <li>
-              <a routerLink="">
-                <span>{{ cipher.name }}</span>
+              <a
+                routerLink="/"
+                class="inline-flex flex-col justify-center items-center gap-1 bg-none hover:bg-bg p-2"
+              >
+                <div>
+                  <img src="/images/icons/folder.png" [alt]="cipher.name + ' cipher folder'" />
+                </div>
+                <span class="text-xs">{{ cipher.name }}</span>
               </a>
             </li>
           } @empty {
@@ -31,12 +45,18 @@
         </ul>
       </div>
       <div>
-        <h2>Hard</h2>
-        <ul>
+        <h3 class="mb-4">Hard</h3>
+        <ul class="flex flex-wrap gap-4 mb-8">
           @for (cipher of grouped.hard; track cipher.id) {
             <li>
-              <a routerLink="">
-                <span>{{ cipher.name }}</span>
+              <a
+                routerLink="/"
+                class="inline-flex flex-col justify-center items-center gap-1 bg-none hover:bg-bg p-2"
+              >
+                <div>
+                  <img src="/images/icons/folder.png" [alt]="cipher.name + ' cipher folder'" />
+                </div>
+                <span class="text-xs">{{ cipher.name }}</span>
               </a>
             </li>
           } @empty {

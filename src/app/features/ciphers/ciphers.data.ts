@@ -6,16 +6,17 @@ import { vigenereDecode, vigenereEncode } from './algorithms/vigenere/vigenere.a
 export const CIPHERS: Cipher[] = [
   {
     id: 'caesar',
-    name: 'Caesar Cipher',
+    name: 'Caesar',
     level: 'easy',
     description: 'Shifts each letter by a fixed number of positions.',
     defaultKey: '3',
     encode: (message: string, key: string) => caesarEncode(message, Number(key)),
     decode: (message: string, key: string) => caesarDecode(message, Number(key)),
   },
+
   {
     id: 'vigenere',
-    name: 'Vigenere Cipher',
+    name: 'Vigenere',
     level: 'medium',
     description:
       'Shifts each letter using a repeating keyword, where each letter of the key defines its own shift.',
@@ -25,8 +26,8 @@ export const CIPHERS: Cipher[] = [
   },
   {
     id: 'playfair',
-    name: 'Playfair Cipher',
-    level: 'easy',
+    name: 'Playfair',
+    level: 'hard',
     description: 'Encrypts pairs of letters using a 5x5 grid.',
     defaultKey: '',
     encode: (message: string, key: string) => playfairEncode(message),
